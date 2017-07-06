@@ -53,7 +53,7 @@ class InverseFizzBuzz {
         }
         
         if (count($resultList) == 0){
-            echo 'null';
+            echo 'null';die;
         } else {
             $count = 100;
             foreach ($resultList as $v){
