@@ -2,15 +2,16 @@
 class InverseFizzBuzz {
     public function __construct($list) {
         $this->list = $list;
+        
+        if(!$this->list) {
+           return null;
+        }
     }
     
     public function sequence() {
 
-
         $resultList = array();
         for($i = 1; $i <= 100; $i++){
-            
-            
             
             $index = $i;
             $count = count($this->list);
@@ -41,9 +42,6 @@ class InverseFizzBuzz {
                     
             }
             // echo "<br />";
-
-
-
             
             if ($resultHash && ($num == $count)){
                 // echo "<pre>";
@@ -58,8 +56,6 @@ class InverseFizzBuzz {
             }
             
         }
-        
-        
         
         if (count($resultList) == 0){
             return null;
@@ -77,10 +73,7 @@ class InverseFizzBuzz {
 
         // echo "<pre>";
         // print_r($result);
-        if($result) {
-            return $result;
-        }
-        return null;
+        return $result;
         
         
     }
