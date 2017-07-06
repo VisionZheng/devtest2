@@ -46,7 +46,6 @@ class InverseFizzBuzz {
                 for($j = $resultHash[0]; $j <= $resultHash[$time]; $j++){
                     array_push($result, $j);
                 }
-
                 array_push($resultList, $result);
                 
             }
@@ -83,4 +82,3 @@ class InverseFizzBuzz {
 
     }
 }
-?>
